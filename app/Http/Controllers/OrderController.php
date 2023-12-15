@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Cart;
-use App\Models\Notification;
+// use App\Models\Notification;
 use App\Models\Order;
 use App\Models\Shipping;
 use App\User;
@@ -13,6 +13,7 @@ use Barryvdh\Snappy\Facades\SnappyPdf as PDF;
 use Helper;
 use Illuminate\Support\Str;
 use App\Notifications\StatusNotification;
+use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Session;
 
 class OrderController extends Controller
