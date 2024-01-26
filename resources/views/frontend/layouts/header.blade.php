@@ -32,7 +32,7 @@
                             <li><i class="ti-location-pin"></i> <a href="{{ route('order.track') }}">Track Order</a>
                             </li>
                             {{-- <li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li> --}}
-                            {{-- @auth
+                            @auth
                                 @if (Auth::user()->role == 'admin')
                                     <li>
                                         <i class="ti-user"></i>
@@ -49,7 +49,7 @@
                             @else
                                 <li><i class="ti-power-off"></i><a href="{{ route('login.form') }}">Login /</a> <a
                                         href="{{ route('register.form') }}">Register</a></li>
-                            @endauth --}}
+                            @endauth
                         </ul>
                     </div>
                     <!-- End Top Right -->
@@ -211,7 +211,7 @@
                                 @elseif (Auth::user()->role == 'user')
                                     <img class="img-profile rounded-circle" src="{{ Auth()->user()->photo }}" alt="User Avatar">
                                 @else
-                                    <img class="img-profile rounded-circle" src="{{ asset('backend/img/avatar.png   ') }}" alt="Default Avatar">
+                                    <img class="img-profile rounded-circle" src="{{ asset('backend/img/avatar.png') }}" alt="Default Avatar">
                                 @endif
                             </a>
                             <!-- Dropdown - User Information -->
@@ -238,7 +238,7 @@
                                 </form>
                             </div>
                         @else
-                            <img class="img-profile rounded-circle" src="{{ asset('backend/img/default-avatar.png') }}" alt="Default Avatar">
+                            {{-- <img style="" class="img-profile rounded-circle" src="{{ asset('backend/img/avatar.png') }}" alt="Default Avatar"> --}}
                         @endauth
                     </div>
                 </div>
