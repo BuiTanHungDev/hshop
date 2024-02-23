@@ -65,5 +65,5 @@ Many more....
 11. Edit ```.env``` file :- remove APP_URL
 10. ```php artisan serve``` or use virtual host
 11. Visit ```localhost:8000``` in your browser
-12. Visit /admin if you want to access the admin panel. Admin Email/Password: ```admin@gmail.com```/```1111```. User Email/Password: ```user@gmail.com```/```1111```
+12. Visit /admin if you want to access the admin panel. Admin Email/Password: ```admin@gmail.com```/```hungnlk2002@```. User Email/Password: ```user@gmail.com```/```1111```
 
